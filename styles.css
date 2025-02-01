@@ -1,0 +1,738 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('https://megafurniture.sg/cdn/shop/articles/dark-vs-light-sofa-which-one-should-you-choose-megafurniture.jpg?v=1721303999') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    text-align: center;
+    color: #ff5e62;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+    color: #ff5e62;
+    border-bottom: 2px solid #ff5e62;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.social-icon {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #ff5e62;
+    transform: scale(1.1);
+}
+
+.whatsapp-icon:hover {
+    color: #25D366;
+}
+
+/* Hero Section */
+.hero-overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 100px 20px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.background-classic {
+    background-image: url('Image\Back grounf interior-designers-mumbai.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.animated-text {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background: #f39c12;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: #e67e22;
+}
+
+/* About Us Section */
+.about-us-section {
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #eaeaea, #c0c0c0); /* Soft gradient background */
+    color: #333; /* Darker text for better readability */
+    border-radius: 10px; /* Slight rounding for a modern look */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.about-us-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.about-item {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    background: #fff; /* White background for content boxes */
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.about-item:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+/* Portfolio Section */
+.portfolio-section {
+    padding: 60px 20px;
+    background: #f4f4f9; /* Soft light background for professionalism */
+    color: #333; /* Dark text for readability */
+    border-radius: 10px; /* Slight rounding for a modern look */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.portfolio-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Round image corners */
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.portfolio-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay for contrast */
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+    opacity: 1; /* Show overlay on hover */
+}
+
+/* Modular Kitchen Section */
+.modular-kitchen-section {
+    padding: 60px 20px;
+    background: linear-gradient(to right, #f8f8f8, #ffffff); /* Soft gradient for a clean look */
+    color: #333; /* Dark text for readability */
+    border-radius: 10px; /* Slight rounding for a modern look */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.modular-kitchen-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #444; /* Slightly darker color for the heading */
+    position: relative; /* For text shadow effect */
+}
+
+.modular-kitchen-section h2::after {
+    content: ''; /* Creates a pseudo-element for a decorative line */
+    display: block;
+    width: 50px; /* Width of the line */
+    height: 3px; /* Height of the line */
+    background: #333; /* Color of the line */
+    margin: 10px auto; /* Centering the line */
+}
+
+.modular-kitchen-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px; /* Space between items */
+}
+
+.modular-kitchen-item {
+    position: relative; /* Allows absolute positioning for overlay */
+    overflow: hidden; /* Hides overflow for rounded corners */
+    border-radius: 8px; /* Rounded corners */
+    transition: transform 0.3s; /* Transition for hover effect */
+}
+
+.modular-kitchen-item img {
+    width: 100%; /* Full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Round image corners */
+}
+
+.modular-kitchen-item:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.modular-kitchen-item .overlay {
+    position: absolute; /* Overlay positioned absolutely */
+    bottom: 0; /* Positioned at the bottom */
+    left: 0; /* Positioned to the left */
+    width: 100%; /* Full width of the item */
+    padding: 10px; /* Padding inside the overlay */
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay for contrast */
+    color: #fff; /* White text for readability */
+    text-align: center; /* Center text */
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s; /* Transition for showing overlay */
+}
+
+.modular-kitchen-item:hover .overlay {
+    opacity: 1; /* Show overlay on hover */
+}
+ 
+ /* Hall */
+ .hall-section {
+    padding: 60px 20px;
+    background: linear-gradient(to right, #f4f4f9, #ffffff); /* Soft gradient for a clean look */
+    color: #333; /* Dark text for readability */
+    border-radius: 10px; /* Slight rounding for a modern look */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.hall-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #444; /* Slightly darker color for the heading */
+    position: relative; /* For text shadow effect */
+}
+
+.hall-section h2::after {
+    content: ''; /* Creates a pseudo-element for a decorative line */
+    display: block;
+    width: 50px; /* Width of the line */
+    height: 3px; /* Height of the line */
+    background: #333; /* Color of the line */
+    margin: 10px auto; /* Centering the line */
+}
+
+.hall-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px; /* Space between items */
+}
+
+.hall-item {
+    position: relative; /* Allows absolute positioning for overlay */
+    overflow: hidden; /* Hides overflow for rounded corners */
+    border-radius: 8px; /* Rounded corners */
+    transition: transform 0.3s; /* Transition for hover effect */
+}
+
+.hall-item img {
+    width: 100%; /* Full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Round image corners */
+}
+
+.hall-item:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.hall-item .overlay {
+    position: absolute; /* Overlay positioned absolutely */
+    bottom: 0; /* Positioned at the bottom */
+    left: 0; /* Positioned to the left */
+    width: 100%; /* Full width of the item */
+    padding: 10px; /* Padding inside the overlay */
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay for contrast */
+    color: #fff; /* White text for readability */
+    text-align: center; /* Center text */
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s; /* Transition for showing overlay */
+}
+
+.hall-item:hover .overlay {
+    opacity: 1; /* Show overlay on hover */
+}
+
+/* Bedroom */
+.bedroom-section {
+    padding: 60px 20px;
+    background: linear-gradient(to right, #f9f9f9, #ffffff); /* Soft gradient for a clean look */
+    color: #333; /* Dark text for readability */
+    border-radius: 10px; /* Slight rounding for a modern look */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.bedroom-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #444; /* Slightly darker color for the heading */
+    position: relative; /* For text shadow effect */
+}
+
+.bedroom-section h2::after {
+    content: ''; /* Creates a pseudo-element for a decorative line */
+    display: block;
+    width: 50px; /* Width of the line */
+    height: 3px; /* Height of the line */
+    background: #333; /* Color of the line */
+    margin: 10px auto; /* Centering the line */
+}
+
+.bedroom-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px; /* Space between items */
+}
+
+.bedroom-item {
+    position: relative; /* Allows absolute positioning for overlay */
+    overflow: hidden; /* Hides overflow for rounded corners */
+    border-radius: 8px; /* Rounded corners */
+    transition: transform 0.3s; /* Transition for hover effect */
+}
+
+.bedroom-item img {
+    width: 100%; /* Full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Round image corners */
+}
+
+.bedroom-item:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.bedroom-item .overlay {
+    position: absolute; /* Overlay positioned absolutely */
+    bottom: 0; /* Positioned at the bottom */
+    left: 0; /* Positioned to the left */
+    width: 100%; /* Full width of the item */
+    padding: 10px; /* Padding inside the overlay */
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay for contrast */
+    color: #fff; /* White text for readability */
+    text-align: center; /* Center text */
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s; /* Transition for showing overlay */
+}
+
+.bedroom-item:hover .overlay {
+    opacity: 1; /* Show overlay on hover */
+}
+
+ /* Bathroom*/
+ .bathroom-section {
+    padding: 60px 20px;
+    background: linear-gradient(to right, #e0e0e0, #ffffff); /* Soft gradient for a clean look */
+    color: #333; /* Dark text for readability */
+    border-radius: 10px; /* Slight rounding for a modern look */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    position: relative; /* For overlay effects */
+}
+
+.bathroom-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #444; /* Slightly darker color for the heading */
+    position: relative; /* For text shadow effect */
+}
+
+.bathroom-section h2::after {
+    content: ''; /* Creates a pseudo-element for a decorative line */
+    display: block;
+    width: 50px; /* Width of the line */
+    height: 3px; /* Height of the line */
+    background: #333; /* Color of the line */
+    margin: 10px auto; /* Centering the line */
+}
+
+.bathroom-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px; /* Space between items */
+}
+
+.bathroom-item {
+    position: relative; /* Allows absolute positioning for overlay */
+    overflow: hidden; /* Hides overflow for rounded corners */
+    border-radius: 8px; /* Rounded corners */
+    transition: transform 0.3s; /* Transition for hover effect */
+}
+
+.bathroom-item img {
+    width: 100%; /* Full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Round image corners */
+}
+
+.bathroom-item:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.bathroom-item .overlay {
+    position: absolute; /* Overlay positioned absolutely */
+    bottom: 0; /* Positioned at the bottom */
+    left: 0; /* Positioned to the left */
+    width: 100%; /* Full width of the item */
+    padding: 10px; /* Padding inside the overlay */
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay for contrast */
+    color: #fff; /* White text for readability */
+    text-align: center; /* Center text */
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s; /* Transition for showing overlay */
+}
+
+.bathroom-item:hover .overlay {
+    opacity: 1; /* Show overlay on hover */
+}
+
+
+/* Counter Section */
+.counter-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 0;
+    background: #3b12f3;
+}
+
+.counter-box {
+    text-align: center;
+    color: #fff;
+}
+
+.counter {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #ffffff, #f8f9fa); /* Subtle gradient for elegance */
+    text-align: center;
+    color: #2c3e50; /* Deep gray-blue for a professional look */
+}
+
+.testimonials-section h2 {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1a1a1a; /* Darker heading for better focus */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.testimonial-carousel {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.testimonial {
+    flex: 1;
+    min-width: 320px;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Enhanced shadow for modern card effect */
+    transition: transform 0.3s, box-shadow 0.3s;
+    color: #2c3e50;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.testimonial:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.testimonial p {
+    font-style: italic;
+}
+
+.testimonial::before {
+    content: "“";
+    font-size: 3rem;
+    color: #007bff; /* Accent color */
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Blog Section */
+.blog-section {
+    padding: 80px 20px;
+    background-color: #f9fafc; /* Clean white-gray background */
+    text-align: center;
+    color: #2c3e50;
+}
+
+.blog-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #1a1a1a;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.blog-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.blog-post {
+    flex: 1;
+    min-width: 320px;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    color: #2c3e50;
+    text-align: left;
+}
+
+.blog-post:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.blog-post h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff; /* Accent color for titles */
+    margin-bottom: 15px;
+}
+
+.blog-post p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555555; /* Subtle text for content */
+}
+
+.blog-post .cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.blog-post .cta-button:hover {
+    background-color: #b35f00;
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .testimonial, .blog-post {
+        min-width: 100%; /* Full-width for smaller screens */
+    }
+
+    .testimonials-section h2, 
+    .blog-section h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav a {
+        font-size: 1rem;
+        margin: 0 10px;
+    }
+
+    .social-icons {
+        display: flex;
+        flex-direction: Center; /* Stack icons vertically */
+        align-items: Center;    /* Center-align icons */
+        gap: 2px;              /* Add space between icons */
+    }
+
+    .social-icon span {
+        display: block;         /* Ensure text stays below the icon */
+        font-size: 0.9rem;      /* Adjust text size */
+        text-align: left;     /* Center the text */
+    }
+
+    .hero-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+
+    .pop-up-line {
+        font-size: 1.5em;
+    }
+
+    .contact-info-item i {
+        font-size: 1.6rem;
+    }
+
+    .contact-form h2 {
+        font-size: 2em;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 1.1em;
+        padding: 12px;
+    }
+
+    .contact-form button {
+        font-size: 1.1em;
+    }
+}
+
+/* Very Small Screens (Mobile Portrait) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+        margin: 0 5px;
+    }
+
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .pop-up-line {
+        font-size: 1.3em;
+    }
+
+    .contact-info-item i {
+        font-size: 1.5rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 1em;
+    }
+
+    .contact-form button {
+        font-size: 1em;
+    }
+}

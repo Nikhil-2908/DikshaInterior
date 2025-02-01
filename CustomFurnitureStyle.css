@@ -1,0 +1,291 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: #ff5e62;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Gallery Section */
+.gallery-section {
+    padding: 50px 20px;
+    background-color: #f0f0f0;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjusted for smaller screens */
+    gap: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.gallery-item p {
+    overflow: visible;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05); /* Slight zoom-in on hover */
+}
+
+/* Testimonials Section */
+.testimonial-section {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.testimonial-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.testimonial {
+    margin: 20px 0;
+    font-style: italic;
+    color: #555;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 50px 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-section input, .contact-section textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-section button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 400px;
+}
+
+.contact-section button:hover {
+    background-color: #555;
+}
+
+/* FAQ Section */
+.faq-section {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: left;
+}
+
+.faq-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-item h3 {
+    font-weight: bold;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.back-to-top:hover {
+    background-color: #555;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Quote Name Styling */
+.quote-name {
+    text-align: center;
+    font-style: italic;
+    color: #666;
+    margin-top: 5px;
+    font-size: 0.9rem;
+}
+
+/* Blockquote styling */
+blockquote {
+    font-style: italic;
+    color: #555;
+    margin: 20px 0;
+    font-size: 1.5rem;
+}
+
+/* Image description styling */
+.gallery-item p {
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.social-icon {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #ff5e62;
+    transform: scale(1.1);
+}
+
+.whatsapp-icon:hover {
+    color: #25D366;
+}
+
+/* Back Button Container */
+.back-button-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.back-to-index {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.back-to-index:hover {
+    background-color: #ff5e62;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem; /* Reduced font size for mobile */
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr; /* Stack images vertically on smaller screens */
+        gap: 15px; /* Reduced gap */
+    }
+
+    .contact-section input, .contact-section textarea, .contact-section button {
+        width: 90%; /* Make form elements more responsive */
+    }
+
+    .social-icons {
+        flex-direction: column; /* Stack social icons vertically */
+        gap: 10px;
+    }
+
+    .faq-section h2, .contact-section h2 {
+        font-size: 1.8rem; /* Smaller font size for headings */
+    }
+
+    .faq-item h3 {
+        font-size: 1.2rem; /* Adjust FAQ item title */
+    }
+
+    .back-to-index {
+        font-size: 1rem; /* Make the button text smaller */
+    }
+}
+
+/* Very Small Screens (Mobile Portrait) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem; /* Further reduce for very small screens */
+    }
+
+    .contact-section input, .contact-section textarea, .contact-section button {
+        width: 100%; /* Full-width inputs and button */
+    }
+
+    .social-icons {
+        gap: 5px;
+    }
+
+    .back-to-index {
+        padding: 8px 16px; /* Smaller padding for very small screens */
+        font-size: 0.9rem;
+    }
+}
